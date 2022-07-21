@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { EuiButton, EuiProvider } from "@elastic/eui";
+import "@elastic/eui/dist/eui_theme_dark.css";
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <EuiProvider colorMode="dark">
+      <div className="App">
+        <EuiButton color="primary">Hi</EuiButton>
+      </div>
+    </EuiProvider>
   );
 }
 
