@@ -10,6 +10,7 @@ import {
 } from "@elastic/eui";
 import { React, useState } from "react";
 import "../imgs/pride.png";
+import DetailsPanel from "./DetailsPanel";
 
 const cta = <EuiButton fill>Add to Calendar</EuiButton>;
 
@@ -36,11 +37,11 @@ function MainPage() {
     {
       id: "event",
       isSelected: selectedTab === "event",
-      label: "Event",
+      label: "Event Details",
       onClick: () => onSelectedTabChanged("event"),
       content: (
         <>
-          <EuiText>{selectedTab}</EuiText>
+          <DetailsPanel />
         </>
       ),
     },
