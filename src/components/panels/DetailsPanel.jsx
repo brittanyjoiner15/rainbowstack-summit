@@ -8,7 +8,7 @@ import {
   EuiText,
 } from "@elastic/eui";
 import React from "react";
-import { addCalButtons } from "./AddCalButtons";
+import { addCalButtons } from "../AddCalButtons";
 
 export default class DetailsPanel extends React.Component {
   renderHero = () => {

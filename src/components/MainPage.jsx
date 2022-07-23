@@ -9,8 +9,10 @@ import {
   EuiText,
 } from "@elastic/eui";
 import { React, useState } from "react";
-import "../imgs/pride.png";
-import DetailsPanel from "./DetailsPanel";
+import { rainbowCluster } from "../data/ImageRefs";
+import DetailsPanel from "./panels/DetailsPanel";
+import SpeakersPanel from "./panels/SpeakersPanel";
+import { makeRainbowText } from "./RainbowLetters";
 
 const cta = <EuiButton fill>Add to Calendar</EuiButton>;
 
@@ -52,7 +54,7 @@ function MainPage() {
       onClick: () => onSelectedTabChanged("speakers"),
       content: (
         <>
-          <EuiText>{selectedTab}</EuiText>
+          <SpeakersPanel />
         </>
       ),
     },
@@ -69,43 +71,13 @@ function MainPage() {
     },
   ];
 
-  const makeRainbowText = () => {
-    const colors = [
-      "#FF1616",
-      "#F7B012",
-      "#FFDE59",
-      "#7ED957",
-      "#38B6FF",
-      "#CB6CE6",
-      "#8C52FF",
-      "#FF1616",
-      "#F7B012",
-      "#FFDE59",
-      "#7ED957",
-      "#38B6FF",
-    ];
-    const letters = "RAINBOWSTACK".split("");
-    const rainbowedLetters = letters.map((letter, index) => {
-      return (
-        <span style={{ color: `${colors[index]}`, fontFamily: "Inter" }}>
-          {letter}
-        </span>
-      );
-    });
-    return (
-      <span>
-        <strong>{rainbowedLetters} SUMMIT</strong>
-      </span>
-    );
-  };
-
   return (
     <EuiPage paddingSize="none">
       <EuiFlexGroup className="eui-fullHeight">
         <EuiPageBody panelled>
           <EuiPageHeader
             restrictWidth
-            iconType="https://user-images.githubusercontent.com/16166290/180519614-5dcfa272-e38d-4228-964e-a1ddf9c85ede.png"
+            iconType={rainbowCluster}
             pageTitle={makeRainbowText()}
             rightSideItems={[cta]}
             tabs={tabs}
