@@ -1,0 +1,162 @@
+import { speakers } from "./speakers";
+
+const findSpeaker = (name) => {
+  return speakers[speakers.findIndex((speaker) => speaker.name === name)];
+};
+
+const setSessionDetails = (session, order) => {
+  let sessionDetails = {};
+  let date = session === "1" ? "Sept 8th" : "Sept 13th";
+  let calendarLink =
+    session === "1"
+      ? "https://calendar.google.com/event?action=TEMPLATE&tmeid=NG0zaDJ1aG45dXU1bWthYTVwbWtrNHQ4MmogYnJpdHRhbnkuam9pbmVyQGVsYXN0aWMuY28&tmsrc=brittany.joiner%40elastic.co"
+      : "https://calendar.google.com/event?action=TEMPLATE&tmeid=NmFsaGNxMnZjOThnMGRoaXByM25kczk0MDUgYnJpdHRhbnkuam9pbmVyQGVsYXN0aWMuY28&tmsrc=brittany.joiner%40elastic.co";
+  let timestamp = "";
+
+  switch (order) {
+    case 1:
+      timestamp =
+        session === "1"
+          ? "2019-09-08T20:00:00.000Z"
+          : "2019-09-13T15:00:00.000Z";
+      break;
+    case 2:
+      timestamp =
+        session === "1"
+          ? "2019-09-08T20:10:00.000Z"
+          : "2019-09-13T15:10:00.000Z";
+      break;
+    case 3:
+      timestamp =
+        session === "1"
+          ? "2019-09-08T20:20:00.000Z"
+          : "2019-09-13T15:20:00.000Z";
+      break;
+    case 4:
+      timestamp =
+        session === "1"
+          ? "2019-09-08T20:30:00.000Z"
+          : "2019-09-13T15:30:00.000Z";
+      break;
+    case 5:
+      timestamp =
+        session === "1"
+          ? "2019-09-08T20:40:00.000Z"
+          : "2019-09-13T15:40:00.000Z";
+      break;
+    case 6:
+      timestamp =
+        session === "1"
+          ? "2019-09-08T20:50:00.000Z"
+          : "2019-09-13T15:50:00.000Z";
+      break;
+    default:
+      timestamp = "none provided";
+      break;
+  }
+  return (sessionDetails = {
+    calendarLink,
+    date,
+    timestamp,
+  });
+};
+
+export const talks = [
+  {
+    sessionDetails: setSessionDetails("1", 4),
+    title: "Making Tech Careers Accessible for Everyone",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "How To",
+    speaker: findSpeaker("Brittany Joiner"),
+  },
+  {
+    sessionDetails: setSessionDetails("1", 1),
+    title: "What Elastic Security and Pro Wrestling Have in Common",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    speaker: "Kate Ferrar",
+    genre: "Tech",
+    speaker: findSpeaker("Dany Johnson"),
+  },
+  {
+    sessionDetails: setSessionDetails("1", 2),
+    title: "Making Time for Music Or Something Like That",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Arts",
+    speaker: findSpeaker("Zacqary Xeper"),
+  },
+  {
+    sessionDetails: setSessionDetails("1", 3),
+    title: "Mindfulness and the Future of Work",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Wellbeing",
+    speaker: findSpeaker("Kate Ferrar"),
+  },
+  {
+    sessionDetails: setSessionDetails("1", 6),
+    title: "How To Find Peace In The Chaos Of The World",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Wellbeing",
+    speaker: findSpeaker("Kiley Davidson"),
+  },
+  {
+    sessionDetails: setSessionDetails("1", 5),
+    title: "Diversity in Tech Panel",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Tech",
+    speaker: findSpeaker("Priscilla Parodi"),
+  },
+  {
+    sessionDetails: setSessionDetails("2", 1),
+    title: "Desana and How Remote Employees Can Use It",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Productivity",
+    speaker: findSpeaker("Corey Williams"),
+  },
+  {
+    sessionDetails: setSessionDetails("2", 2),
+    title: "How to Find and Support LGBTQIA+ Orgs",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Giving Back",
+    speaker: findSpeaker("Kristina Paiz"),
+  },
+  {
+    sessionDetails: setSessionDetails("2", 3),
+    title: "How To Make Music",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Arts",
+    speaker: findSpeaker("Julio Camarero"),
+  },
+  {
+    sessionDetails: setSessionDetails("2", 4),
+    title: "Something Really Cool But We Don't Know Yet",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Arts",
+    speaker: findSpeaker("Anderson Queiroz"),
+  },
+  {
+    sessionDetails: setSessionDetails("2", 5),
+    title: "Best LGBTQIA+ Twitter Accounts",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Arts",
+    speaker: findSpeaker("Wes Mason"),
+  },
+  {
+    sessionDetails: setSessionDetails("2", 6),
+    title: "Something Interest I'm Sure You'll Want To Hear",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Arts",
+    speaker: findSpeaker("Javier Detrinidad"),
+  },
+];
