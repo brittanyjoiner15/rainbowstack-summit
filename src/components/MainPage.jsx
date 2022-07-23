@@ -6,12 +6,12 @@ import {
   EuiPageContent,
   EuiPageContentBody,
   EuiPageHeader,
-  EuiText,
 } from "@elastic/eui";
 import { React, useState } from "react";
 import { rainbowCluster } from "../data/ImageRefs";
 import DetailsPanel from "./panels/DetailsPanel";
 import SpeakersPanel from "./panels/SpeakersPanel";
+import TalksPanel from "./panels/TalksPanel";
 import { makeRainbowText } from "./RainbowLetters";
 
 const cta = <EuiButton fill>Add to Calendar</EuiButton>;
@@ -65,7 +65,7 @@ function MainPage() {
       onClick: () => onSelectedTabChanged("talks"),
       content: (
         <>
-          <EuiText>{selectedTab}</EuiText>
+          <TalksPanel />
         </>
       ),
     },
@@ -103,3 +103,5 @@ function MainPage() {
 }
 
 export default MainPage;
+
+// TODO: Make a footer with

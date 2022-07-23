@@ -1,5 +1,4 @@
 import {
-  EuiButton,
   EuiEmptyPrompt,
   EuiFlexGroup,
   EuiFlexItem,
@@ -36,13 +35,6 @@ export default class DetailsPanel extends React.Component {
     );
   };
 
-  renderContent = () => {
-    return <EuiText>Oh look at this text</EuiText>;
-  };
-  renderButton = () => {
-    return <EuiButton>Another button</EuiButton>;
-  };
-
   render() {
     return (
       <>
@@ -63,7 +55,11 @@ export default class DetailsPanel extends React.Component {
                 you can!
               </EuiText>
             }
-            actions={[addCalButtons("Sept 8th"), addCalButtons("Sept 13th")]}
+            actions={[
+              addCalButtons("Sept 8th, 2pm EST"),
+              addCalButtons("Sept 13th, 9am EST"),
+              // Maybe add a "send me a text to remind me button?"
+            ]}
           />
         </EuiFlexGroup>
       </>
