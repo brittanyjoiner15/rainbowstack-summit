@@ -19,6 +19,19 @@ export default class TalksPanel extends React.Component {
 
     this.state = {
       showEst: false,
+      sortField: "Session",
+      sortDirection: "asc",
+    };
+  }
+
+  onChange = (e) => {};
+
+  createSortingObject() {
+    return {
+      sort: {
+        field: this.state.sortField,
+        direction: this.state.sortDirection,
+      },
     };
   }
 
@@ -33,6 +46,22 @@ export default class TalksPanel extends React.Component {
     return this.state.showEst
       ? estTime.format("h:mm a z")
       : localTime.format("h:mm a z");
+  };
+
+  renderGenreTags = (tagName) => {
+    let color = "";
+    switch (tagName) {
+      case "How To":
+        return (color = "primary");
+      case "Elastic":
+        return (color = "success");
+      case "Self Care":
+        return (color = "accent");
+      case "LGBTQIA+":
+        return (color = "warning");
+      default:
+        return (color = "default");
+    }
   };
 
   columns = [
@@ -89,7 +118,9 @@ export default class TalksPanel extends React.Component {
       field: "genre",
       name: "Genre",
       sortable: true,
-      render: (genre) => <EuiBadge color="warning">{genre}</EuiBadge>,
+      render: (genre) => (
+        <EuiBadge color={this.renderGenreTags(genre)}>{genre}</EuiBadge>
+      ),
     },
     // {
     //   name: "Actions",
@@ -100,7 +131,7 @@ export default class TalksPanel extends React.Component {
     //       type: "icon",
     //       icon: "calendar",
     //       onClick: (sessionDetails) => {
-    //         console.log(sessionDetails.calendarLink);
+
     //       },
     //     },
     //     {
@@ -137,7 +168,7 @@ export default class TalksPanel extends React.Component {
   render() {
     return (
       <>
-        {console.log(this.state.showEst)}
+        {console.log(this.createSortingObject())}
         <EuiFlexGroup
           gutterSize="l"
           alignItems="center"
@@ -147,7 +178,15 @@ export default class TalksPanel extends React.Component {
         </EuiFlexGroup>
         <EuiFlexGroup className="xMargin">
           <EuiFlexItem>
-            <EuiBasicTable items={talks} columns={this.columns} />
+            <EuiBasicTable
+              items={talks}
+              columns={this.columns}
+              sorting={this.createSortingObject()}
+              onChange={(e) => {
+                this.setState({ sortField: e.sort.field });
+                this.setState({ sortDirection: e.sort.direction });
+              }}
+            />
           </EuiFlexItem>
         </EuiFlexGroup>
       </>

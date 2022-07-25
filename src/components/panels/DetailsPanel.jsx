@@ -8,6 +8,7 @@ import {
 } from "@elastic/eui";
 import React from "react";
 import { addCalButtons } from "../AddCalButtons";
+import { sessionOne, sessionTwo } from "../consts.js";
 
 export default class DetailsPanel extends React.Component {
   renderHero = () => {
@@ -56,8 +57,8 @@ export default class DetailsPanel extends React.Component {
               </EuiText>
             }
             actions={[
-              addCalButtons("Sept 8th, 2pm EST"),
-              addCalButtons("Sept 13th, 9am EST"),
+              addCalButtons(sessionOne.dateAndTime, sessionOne.calendarLink),
+              addCalButtons(sessionTwo.dateAndTime, sessionTwo.calendarLink),
               // Maybe add a "send me a text to remind me button?"
             ]}
           />

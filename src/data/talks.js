@@ -67,7 +67,7 @@ export const talks = [
     title: "Making Tech Careers Accessible for Everyone",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "How To",
+    genre: "Career",
     speaker: findSpeaker("Brittany Joiner"),
   },
   {
@@ -76,7 +76,7 @@ export const talks = [
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
     speaker: "Kate Ferrar",
-    genre: "Tech",
+    genre: "Elastic",
     speaker: findSpeaker("Dany Johnson"),
   },
   {
@@ -84,15 +84,15 @@ export const talks = [
     title: "Making Time for Music Or Something Like That",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Arts",
+    genre: "Self Care",
     speaker: findSpeaker("Zacqary Xeper"),
   },
   {
     sessionDetails: setSessionDetails("1", 3),
-    title: "Mindfulness and the Future of Work",
+    title: "Mindfulness and Meditation",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Wellbeing",
+    genre: "Self Care",
     speaker: findSpeaker("Kate Ferrar"),
   },
   {
@@ -100,7 +100,7 @@ export const talks = [
     title: "How To Find Peace In The Chaos Of The World",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Wellbeing",
+    genre: "Self Care",
     speaker: findSpeaker("Kiley Davidson"),
   },
   {
@@ -108,7 +108,7 @@ export const talks = [
     title: "Diversity in Tech Panel",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Tech",
+    genre: "LGBTQIA+",
     speaker: findSpeaker("Priscilla Parodi"),
   },
   {
@@ -116,7 +116,7 @@ export const talks = [
     title: "Desana and How Remote Employees Can Use It",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Productivity",
+    genre: "Career",
     speaker: findSpeaker("Corey Williams"),
   },
   {
@@ -124,7 +124,7 @@ export const talks = [
     title: "How to Find and Support LGBTQIA+ Orgs",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Giving Back",
+    genre: "LGBTQIA+",
     speaker: findSpeaker("Kristina Paiz"),
   },
   {
@@ -132,7 +132,7 @@ export const talks = [
     title: "How To Make Music",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Arts",
+    genre: "Self Care",
     speaker: findSpeaker("Julio Camarero"),
   },
   {
@@ -140,7 +140,7 @@ export const talks = [
     title: "Something Really Cool But We Don't Know Yet",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Arts",
+    genre: "TBD",
     speaker: findSpeaker("Anderson Queiroz"),
   },
   {
@@ -148,7 +148,7 @@ export const talks = [
     title: "Best LGBTQIA+ Twitter Accounts",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Arts",
+    genre: "LGBTQIA+",
     speaker: findSpeaker("Wes Mason"),
   },
   {
@@ -156,7 +156,7 @@ export const talks = [
     title: "Something Interest I'm Sure You'll Want To Hear",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Arts",
+    genre: "TBD",
     speaker: findSpeaker("Javier Detrinidad"),
   },
 ];

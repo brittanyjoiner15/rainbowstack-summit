@@ -1,5 +1,4 @@
 import {
-  EuiButton,
   EuiFlexGroup,
   EuiPage,
   EuiPageBody,
@@ -9,12 +8,12 @@ import {
 } from "@elastic/eui";
 import { React, useState } from "react";
 import { rainbowCluster } from "../data/ImageRefs";
+import { addCalButtons } from "./AddCalButtons";
+import { sessionOne, sessionTwo } from "./consts";
 import DetailsPanel from "./panels/DetailsPanel";
 import SpeakersPanel from "./panels/SpeakersPanel";
 import TalksPanel from "./panels/TalksPanel";
 import { makeRainbowText } from "./RainbowLetters";
-
-const cta = <EuiButton fill>Add to Calendar</EuiButton>;
 
 function MainPage() {
   const [selectedTab, setSelectedTab] = useState("event");
@@ -79,7 +78,10 @@ function MainPage() {
             restrictWidth
             iconType={rainbowCluster}
             pageTitle={makeRainbowText()}
-            rightSideItems={[cta]}
+            rightSideItems={[
+              addCalButtons(sessionOne.dateAndTime, sessionOne.calendarLink),
+              addCalButtons(sessionTwo.dateAndTime, sessionTwo.calendarLink),
+            ]}
             tabs={tabs}
           />
 
