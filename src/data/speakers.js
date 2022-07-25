@@ -7,6 +7,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U01BRS04C4D-21bbb6ba68c0-512",
+    pronouns: "she/her/hers",
   },
   {
     name: "Corey Williams",
@@ -16,6 +17,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UP3AQEW6A-7779e319fbb9-512",
+    pronouns: "she/her",
   },
   {
     name: "Julio Camarero",
@@ -25,6 +27,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UE1AKHQ0M-7771c748eefa-512",
+    pronouns: "he/him",
   },
   {
     name: "Anderson Queiroz",
@@ -34,6 +37,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U02N8PF08GK-780813ed7d3c-512",
+    pronouns: "he/him/his",
   },
   {
     name: "Kiley Davidson",
@@ -43,6 +47,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UAD0S2JRG-6f933510dc51-512",
+    pronouns: "she/her",
   },
   {
     name: "Priscilla Parodi",
@@ -52,6 +57,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UF3NLEKV2-911a8423ac4a-512",
+    pronouns: "need to confirm",
   },
   {
     name: "Dany Johnson",
@@ -61,6 +67,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U02KY8RHDJA-feeffe29ee9f-512",
+    pronouns: "they/she",
   },
   {
     name: "Wes Mason",
@@ -70,6 +77,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UK90A12E6-7dafbfc1d746-512",
+    pronouns: "they/he",
   },
   {
     name: "Kristina Paiz",
@@ -79,6 +87,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U66QCD6MN-dee85887a2e7-512",
+    pronouns: "she/her",
   },
   {
     name: "Zacqary Xeper",
@@ -88,6 +97,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UK5V92V7F-f6356aca3f9f-512",
+    pronouns: "him/him/they/them",
   },
   {
     name: "Alejandro Sánchez",
@@ -97,6 +107,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U02RM2V2KL7-8a493a5856f3-512",
+    pronouns: "him/him",
   },
   {
     name: "Javier Detrinidad",
@@ -106,6 +117,7 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U020APE5PT5-186e0906367a-512",
+    pronouns: "him/him/his",
   },
   {
     name: "Brittany Joiner",
@@ -115,5 +127,26 @@ export const speakers = [
     shortBio:
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UAF1B6KKJ-f0d0928659b0-512",
+    pronouns: "she/her",
+  },
+  {
+    name: "Cory Fairchild",
+    title: "Innovation Product Manager",
+    team: "Innovation",
+    basedIn: "Arizona, USA",
+    shortBio:
+      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+    avatar: "https://ca.slack-edge.com/T0CUZ52US-U02SV21KTBM-8e7bf4c76301-512",
+    pronouns: "he/him/his",
+  },
+  {
+    name: "David Ricordel",
+    title: "Consulting Architect",
+    team: "Customer Success Group",
+    basedIn: "Spain",
+    shortBio:
+      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+    avatar: "https://ca.slack-edge.com/T0CUZ52US-UM85VQQQH-537e4956a5c4-512",
+    pronouns: "he/him",
   },
 ];

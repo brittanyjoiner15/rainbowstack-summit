@@ -37,6 +37,9 @@ export default class SpeakersPanel extends React.Component {
                       <EuiBadge color="warning" iconType="globe">
                         {speaker.basedIn}
                       </EuiBadge>
+                      <EuiBadge color="success" iconType="faceHappy">
+                        {speaker.pronouns}
+                      </EuiBadge>
                     </>
                   }
                   footer={speaker.shortBio}
