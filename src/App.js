@@ -5,6 +5,7 @@ import "./App.css";
 import MainPage from "./components/MainPage";
 
 function App() {
+  console.log(process.env.REACT_APP_PASSWORD);
   return (
     <EuiProvider colorMode="dark">
       <MainPage />

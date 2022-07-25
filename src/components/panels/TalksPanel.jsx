@@ -168,7 +168,6 @@ export default class TalksPanel extends React.Component {
   render() {
     return (
       <>
-        {console.log(this.createSortingObject())}
         <EuiFlexGroup
           gutterSize="l"
           alignItems="center"

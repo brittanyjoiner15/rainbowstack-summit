@@ -72,7 +72,7 @@ function MainPage() {
   };
 
   const promptPassword = () => {
-    const password = "westcovina";
+    const password = process.env.REACT_APP_PASSWORD;
 
     const handleSubmit = () => {
       if (!typedPassword) {
