@@ -1,5 +1,14 @@
 import {
+  EuiButton,
+  EuiFieldText,
   EuiFlexGroup,
+  EuiForm,
+  EuiFormRow,
+  EuiModal,
+  EuiModalBody,
+  EuiModalFooter,
+  EuiModalHeader,
+  EuiModalHeaderTitle,
   EuiPage,
   EuiPageBody,
   EuiPageContent,
@@ -13,14 +22,19 @@ import { sessionOne, sessionTwo } from "./consts";
 import DetailsPanel from "./panels/DetailsPanel";
 import SpeakersPanel from "./panels/SpeakersPanel";
 import TalksPanel from "./panels/TalksPanel";
+import TalksTBDPanel from "./panels/TalksTBDPanel";
 import { makeRainbowText } from "./RainbowLetters";
 
 function MainPage() {
   const [selectedTab, setSelectedTab] = useState("event");
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [typedPassword, setTypedPassword] = useState("");
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
   const onSelectedTabChanged = (id) => {
     setSelectedTab(id);
   };
+
   const showSelectedContent = (tab) => {
     switch (selectedTab) {
       case "event":
@@ -32,6 +46,81 @@ function MainPage() {
       default:
         return tabs[0].content;
     }
+  };
+
+  const loginButton = () => {
+    return (
+      <>
+        <EuiButton
+          color={"text"}
+          onClick={() => {
+            if (isAdmin) {
+              setIsAdmin(false);
+              setTypedPassword("");
+            }
+            if (!isAdmin) {
+              showLoginModal
+                ? setShowLoginModal(false)
+                : setShowLoginModal(true);
+            }
+          }}
+        >
+          {isAdmin ? "Switch to user" : "I'm an admin"}
+        </EuiButton>
+      </>
+    );
+  };
+
+  const promptPassword = () => {
+    const password = "westcovina";
+
+    const handleSubmit = () => {
+      if (!typedPassword) {
+        return;
+      }
+
+      if (typedPassword === password) {
+        setIsAdmin(true);
+        setShowLoginModal(false);
+      } else {
+        alert("Incorrect password");
+        setTypedPassword("");
+      }
+    };
+
+    return (
+      <>
+        <EuiModal
+          onClose={() => {
+            setShowLoginModal(false);
+          }}
+        >
+          <EuiModalHeader>
+            <EuiModalHeaderTitle>
+              <h1>Login</h1>
+            </EuiModalHeaderTitle>
+          </EuiModalHeader>
+
+          <EuiModalBody>
+            <EuiForm>
+              <EuiFormRow>
+                <EuiFieldText
+                  placeholder="Enter the password"
+                  onBlur={(e) => setTypedPassword(e.target.value)}
+                  aria-label="Use aria labels when no actual label is in use"
+                />
+              </EuiFormRow>
+            </EuiForm>
+          </EuiModalBody>
+
+          <EuiModalFooter>
+            <EuiButton type="submit" onClick={handleSubmit()} fill>
+              Submit
+            </EuiButton>
+          </EuiModalFooter>
+        </EuiModal>
+      </>
+    );
   };
 
   const tabs = [
@@ -62,11 +151,7 @@ function MainPage() {
       isSelected: selectedTab === "talks",
       label: "Talks",
       onClick: () => onSelectedTabChanged("talks"),
-      content: (
-        <>
-          <TalksPanel />
-        </>
-      ),
+      content: isAdmin ? <TalksPanel /> : <TalksTBDPanel />,
     },
   ];
 
@@ -79,6 +164,7 @@ function MainPage() {
             iconType={rainbowCluster}
             pageTitle={makeRainbowText()}
             rightSideItems={[
+              loginButton(),
               addCalButtons(sessionOne.dateAndTime, sessionOne.calendarLink),
               addCalButtons(sessionTwo.dateAndTime, sessionTwo.calendarLink),
             ]}
@@ -98,6 +184,8 @@ function MainPage() {
               {showSelectedContent(selectedTab)}
             </EuiPageContentBody>
           </EuiPageContent>
+
+          {showLoginModal && promptPassword()}
         </EuiPageBody>
       </EuiFlexGroup>
     </EuiPage>
