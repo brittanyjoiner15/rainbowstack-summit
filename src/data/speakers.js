@@ -13,9 +13,9 @@ export const speakers = [
     name: "Corey Williams",
     title: "Global Engagement Lead",
     team: "Workplace Experience",
-    basedIn: "Virginia, USA",
+    basedIn: "Washington, DC, USA",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "Corey manages a large snack budget and plans parties at Elastic. She lives in DC with her partner and their two dogs.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UP3AQEW6A-7779e319fbb9-512",
     pronouns: "she/her",
   },
