@@ -24,8 +24,7 @@ export const speakers = [
     title: "Principal Software Engineer I",
     team: "Platform",
     basedIn: "Spain",
-    shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+    shortBio: "The next Lady Gaga. I cried with Heartstopper too.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UE1AKHQ0M-7771c748eefa-512",
     pronouns: "he/him",
   },
@@ -75,17 +74,17 @@ export const speakers = [
     team: "Enterprise Search",
     basedIn: "United Kingdom",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "fam first demiguy who has managed to be in the same city/weekend as 3 different prides around the world and not get to any of them.💗 💛 💙",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UK90A12E6-7dafbfc1d746-512",
     pronouns: "they/he",
   },
   {
     name: "Kristina Paiz",
     title: "Senior Manager, HR Programs",
-    team: "DEI",
+    team: "DEI/Elastic Cares",
     basedIn: "Italy",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "Kristina here - from the SF Bay Area now a nomad of sorts in the Rome area. I manage all things goodness and philanthropy at Elastic.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U66QCD6MN-dee85887a2e7-512",
     pronouns: "she/her",
   },
@@ -125,7 +124,7 @@ export const speakers = [
     team: "Innovation",
     basedIn: "Louisiana, USA",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "I like to build things, I'm ridiculously good at Dutch Blitz, and I'm obsessed with animals.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UAF1B6KKJ-f0d0928659b0-512",
     pronouns: "she/her",
   },
