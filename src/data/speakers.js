@@ -63,8 +63,7 @@ export const speakers = [
     title: "Sales Development Representative",
     team: "AMER Fed",
     basedIn: "Virginia, USA",
-    shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+    shortBio: "Sponsored by Genderfluid™",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U02KY8RHDJA-feeffe29ee9f-512",
     pronouns: "they/she",
   },
