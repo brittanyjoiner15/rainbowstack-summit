@@ -110,7 +110,7 @@ export const speakers = [
   },
   {
     name: "Javier Detrinidad",
-    title: "Program Manager}",
+    title: "Program Manager",
     team: "DEI",
     basedIn: "Florida, USA",
     shortBio:
