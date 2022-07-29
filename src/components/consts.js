@@ -5,7 +5,7 @@ export const sessionOne = {
 };
 
 export const sessionTwo = {
-  dateAndTime: "Sept 13th, 2pm EDT",
+  dateAndTime: "Sept 13th, 9am EDT",
   calendarLink:
     "https://calendar.google.com/event?action=TEMPLATE&tmeid=NmFsaGNxMnZjOThnMGRoaXByM25kczk0MDUgYnJpdHRhbnkuam9pbmVyQGVsYXN0aWMuY28&tmsrc=brittany.joiner%40elastic.co",
 };

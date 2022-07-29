@@ -133,7 +133,7 @@ export const speakers = [
     team: "Innovation",
     basedIn: "Arizona, USA",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "Cory is a product manager for the Elastic Support Portal and internal tools for the Customer Success Group. He lives in Phoenix, Az with his husband and two energetic Weimaraners.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U02SV21KTBM-8e7bf4c76301-512",
     pronouns: "he/him/his",
   },

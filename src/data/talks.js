@@ -51,7 +51,7 @@ const setSessionDetails = (session, order) => {
           : "2019-09-13T15:50:00.000Z";
       break;
     default:
-      timestamp = "none provided";
+      timestamp = "TBD";
       break;
   }
   return (sessionDetails = {
@@ -158,5 +158,13 @@ export const talks = [
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
     genre: "TBD",
     speaker: findSpeaker("Javier Detrinidad"),
+  },
+  {
+    sessionDetails: setSessionDetails("1", 7),
+    title: "Queer Literature and Book Club Kickoff",
+    description:
+      "Take a deep dive into new releases in queer literature and the kick off for the Rainbowstack Book Club!",
+    genre: "LGBTQIA+",
+    speaker: findSpeaker("Cory Fairchild"),
   },
 ];
