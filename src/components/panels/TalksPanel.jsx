@@ -24,7 +24,17 @@ export default class TalksPanel extends React.Component {
     };
   }
 
-  onChange = (e) => {};
+  // sendToZapier(data) {
+  //   fetch("https://hooks.zapier.com/hooks/catch/667097/bqhe6mm/", {
+  //     method: "POST",
+  //     body: data,
+  //   })
+  //     .then((res) => res.json())
+  //     .then((json) => {
+  //       console.log("sent to zapier");
+  //     })
+  //     .catch((err) => console.log(err));
+  // }
 
   createSortingObject() {
     return {
@@ -122,27 +132,20 @@ export default class TalksPanel extends React.Component {
         <EuiBadge color={this.renderGenreTags(genre)}>{genre}</EuiBadge>
       ),
     },
-    // {
-    //   name: "Actions",
-    //   actions: [
-    //     {
-    //       name: "Save",
-    //       description: "Save to your calendar",
-    //       type: "icon",
-    //       icon: "calendar",
-    //       onClick: (sessionDetails) => {
-
-    //       },
-    //     },
-    //     {
-    //       name: "Reminder",
-    //       description: "Get a reminder",
-    //       type: "icon",
-    //       icon: "bell",
-    //       onClick: () => {},
-    //     },
-    //   ],
-    // },
+    {
+      name: "Actions",
+      actions: [
+        {
+          name: "Add to cal",
+          description: "Add session to your calendar",
+          type: "icon",
+          icon: "calendar",
+          onClick: (e) => {
+            window.open(e.sessionDetails.calendarLink, "_blank");
+          },
+        },
+      ],
+    },
   ];
 
   renderShowEstButton() {
@@ -181,6 +184,7 @@ export default class TalksPanel extends React.Component {
               items={talks}
               columns={this.columns}
               sorting={this.createSortingObject()}
+              hasActions
               onChange={(e) => {
                 this.setState({ sortField: e.sort.field });
                 this.setState({ sortDirection: e.sort.direction });
