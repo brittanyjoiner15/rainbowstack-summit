@@ -40,11 +40,11 @@ export const speakers = [
   },
   {
     name: "Kiley Davidson",
-    title: "Senior Systems Engineer",
-    team: "IT Ops",
-    basedIn: "California, USA",
+    title: "Senior IT Systems Engineer",
+    team: "IT",
+    basedIn: "Los Angeles, CA, USA",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "If hobbies were cats, Kiley would be a crazy cat lady. As it is, she just has a wife, two cats, and a dog - plus a lot of hobbies.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UAD0S2JRG-6f933510dc51-512",
     pronouns: "she/her",
   },
