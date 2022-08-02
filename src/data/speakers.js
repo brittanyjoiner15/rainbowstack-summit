@@ -1,15 +1,5 @@
 export const speakers = [
   {
-    name: "Kate Ferrar",
-    title: "Senior Product Designer",
-    team: "Observability",
-    basedIn: "Colorado, USA",
-    shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
-    avatar: "https://ca.slack-edge.com/T0CUZ52US-U01BRS04C4D-21bbb6ba68c0-512",
-    pronouns: "she/her/hers",
-  },
-  {
     name: "Corey Williams",
     title: "Global Engagement Lead",
     team: "Workplace Experience",
@@ -31,10 +21,10 @@ export const speakers = [
   {
     name: "Anderson Queiroz",
     title: "Senior Software Engineer",
-    team: "Observability",
+    team: "Platform",
     basedIn: "Germany",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "From hobby to profession, I've been crafting software for almost 15 years, for fun, academic research, and on the market. Having worked with many different programming languages and paradigms I've worked in startups, from fintech to travel industry, to break monoliths into reliable microservices and spreading best practices. Currently, at Elastic I work with the Elastic Agent and I try to be always on the top of what is new in Go and share what I've learnt.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U02N8PF08GK-780813ed7d3c-512",
     pronouns: "he/him/his",
   },

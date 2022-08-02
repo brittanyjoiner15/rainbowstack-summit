@@ -71,15 +71,6 @@ export const talks = [
     speaker: findSpeaker("Brittany Joiner"),
   },
   {
-    sessionDetails: setSessionDetails("1", 1),
-    title: "What Elastic Security and Pro Wrestling Have in Common",
-    description:
-      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    speaker: "Kate Ferrar",
-    genre: "Elastic",
-    speaker: findSpeaker("Dany Johnson"),
-  },
-  {
     sessionDetails: setSessionDetails("1", 2),
     title: "Making Time for Music Or Something Like That",
     description:
@@ -160,7 +151,7 @@ export const talks = [
     speaker: findSpeaker("Javier Detrinidad"),
   },
   {
-    sessionDetails: setSessionDetails("1", 7),
+    sessionDetails: setSessionDetails("1", 1),
     title: "Queer Literature and Book Club Kickoff",
     description:
       "Take a deep dive into new releases in queer literature and the kick off for the Rainbowstack Book Club!",
