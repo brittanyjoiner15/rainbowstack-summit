@@ -44,7 +44,7 @@ export const speakers = [
     team: "Community",
     basedIn: "Florida, USA",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "Hey! I'm part of the community team @Elastic. My goal is to connect our users and the company, being the bridge between us :) From startups to students, from partners to customers, having a good human-centered experience is what I consider the most important result!",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UF3NLEKV2-911a8423ac4a-512",
     pronouns: "need to confirm",
   },
