@@ -103,7 +103,7 @@ export const speakers = [
     team: "DEI",
     basedIn: "Florida, USA",
     shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+      "Javier here… I live where you vacation!  I manage our DEI Programs and work closely with our ERGs.  I love flying planes, the beach, and Disney/Universal parks.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U020APE5PT5-186e0906367a-512",
     pronouns: "him/him/his",
   },
