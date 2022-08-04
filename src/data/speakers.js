@@ -63,8 +63,7 @@ export const speakers = [
     title: "Senior Software Engineer",
     team: "Stack - Machine Learning",
     basedIn: "Louisiana, USA",
-    shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+    shortBio: "👋",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UK5V92V7F-f6356aca3f9f-512",
     pronouns: "him/him/they/them",
   },
@@ -73,8 +72,7 @@ export const speakers = [
     title: "Consulting Architect",
     team: "Customer Success Group",
     basedIn: "Spain",
-    shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+    shortBio: "👋",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U02RM2V2KL7-8a493a5856f3-512",
     pronouns: "him/him",
   },
@@ -113,8 +111,7 @@ export const speakers = [
     title: "Consulting Architect",
     team: "Customer Success Group",
     basedIn: "Spain",
-    shortBio:
-      "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
+    shortBio: "👋",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UM85VQQQH-537e4956a5c4-512",
     pronouns: "he/him",
   },
@@ -124,7 +121,7 @@ export const speakers = [
     team: "Platform",
     basedIn: "Germany",
     shortBio:
-      "From hobby to profession, I've been crafting software for almost 15 years, for fun, academic research, and on the market. Having worked with many different programming languages and paradigms I've worked in startups, from fintech to travel industry, to break monoliths into reliable microservices and spreading best practices. Currently, at Elastic I work with the Elastic Agent and I try to be always on the top of what is new in Go and share what I've learnt.",
+      "From hobby to profession, I've been crafting software for almost 15 years, for fun, academic research, and on the market. Currently, at Elastic I work with the Elastic Agent and I try to be always on the top of what is new in Go and share what I've learnt.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U02N8PF08GK-780813ed7d3c-512",
     pronouns: "he/him/his",
   },
@@ -134,7 +131,7 @@ export const speakers = [
     team: "Community",
     basedIn: "Florida, USA",
     shortBio:
-      "Hey! I'm part of the community team @Elastic. My goal is to connect our users and the company, being the bridge between us :) From startups to students, from partners to customers, having a good human-centered experience is what I consider the most important result!",
+      "Hey! I'm part of the community team @Elastic. My goal is to connect our users and the company, being the bridge between us :) Having a good human-centered experience is what I consider the most important result!",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UF3NLEKV2-911a8423ac4a-512",
     pronouns: "she/her",
   },
