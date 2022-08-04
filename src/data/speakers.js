@@ -18,16 +18,7 @@ export const speakers = [
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UE1AKHQ0M-7771c748eefa-512",
     pronouns: "he/him",
   },
-  {
-    name: "Anderson Queiroz",
-    title: "Senior Software Engineer",
-    team: "Platform",
-    basedIn: "Germany",
-    shortBio:
-      "From hobby to profession, I've been crafting software for almost 15 years, for fun, academic research, and on the market. Having worked with many different programming languages and paradigms I've worked in startups, from fintech to travel industry, to break monoliths into reliable microservices and spreading best practices. Currently, at Elastic I work with the Elastic Agent and I try to be always on the top of what is new in Go and share what I've learnt.",
-    avatar: "https://ca.slack-edge.com/T0CUZ52US-U02N8PF08GK-780813ed7d3c-512",
-    pronouns: "he/him/his",
-  },
+
   {
     name: "Kiley Davidson",
     title: "Senior IT Systems Engineer",
@@ -37,16 +28,6 @@ export const speakers = [
       "If hobbies were cats, Kiley would be a crazy cat lady. As it is, she just has a wife, two cats, and a dog - plus a lot of hobbies.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UAD0S2JRG-6f933510dc51-512",
     pronouns: "she/her",
-  },
-  {
-    name: "Priscilla Parodi",
-    title: "Principal Community Advocacy",
-    team: "Community",
-    basedIn: "Florida, USA",
-    shortBio:
-      "Hey! I'm part of the community team @Elastic. My goal is to connect our users and the company, being the bridge between us :) From startups to students, from partners to customers, having a good human-centered experience is what I consider the most important result!",
-    avatar: "https://ca.slack-edge.com/T0CUZ52US-UF3NLEKV2-911a8423ac4a-512",
-    pronouns: "need to confirm",
   },
   {
     name: "Dany Johnson",
@@ -136,5 +117,25 @@ export const speakers = [
       "This is a short bio from a rainbowstack member. I'm going to get them to fill it out with something fun about them.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UM85VQQQH-537e4956a5c4-512",
     pronouns: "he/him",
+  },
+  {
+    name: "Anderson Queiroz",
+    title: "Senior Software Engineer",
+    team: "Platform",
+    basedIn: "Germany",
+    shortBio:
+      "From hobby to profession, I've been crafting software for almost 15 years, for fun, academic research, and on the market. Having worked with many different programming languages and paradigms I've worked in startups, from fintech to travel industry, to break monoliths into reliable microservices and spreading best practices. Currently, at Elastic I work with the Elastic Agent and I try to be always on the top of what is new in Go and share what I've learnt.",
+    avatar: "https://ca.slack-edge.com/T0CUZ52US-U02N8PF08GK-780813ed7d3c-512",
+    pronouns: "he/him/his",
+  },
+  {
+    name: "Priscilla Parodi",
+    title: "Principal Community Advocacy",
+    team: "Community",
+    basedIn: "Florida, USA",
+    shortBio:
+      "Hey! I'm part of the community team @Elastic. My goal is to connect our users and the company, being the bridge between us :) From startups to students, from partners to customers, having a good human-centered experience is what I consider the most important result!",
+    avatar: "https://ca.slack-edge.com/T0CUZ52US-UF3NLEKV2-911a8423ac4a-512",
+    pronouns: "she/her",
   },
 ];
