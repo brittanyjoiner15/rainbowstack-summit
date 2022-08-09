@@ -4,9 +4,9 @@ import {
   EuiFlexGroup,
   EuiFlexItem,
   EuiText,
-  EuiIcon,
 } from "@elastic/eui";
 import React from "react";
+import mixpanel from "mixpanel-browser";
 
 export default class Bottombar extends React.Component {
   render() {
@@ -27,6 +27,9 @@ export default class Bottombar extends React.Component {
                 fill
                 href="https://groups.google.com/a/elastic.co/g/rainbowstack"
                 target={"_blank"}
+                onClick={() => {
+                  mixpanel.track(`Clicked google group`);
+                }}
               >
                 Join the rainbowstack@ group
               </EuiButton>
@@ -38,6 +41,9 @@ export default class Bottombar extends React.Component {
                 fill
                 href="https://elastic.slack.com/archives/CGQUUPD8F"
                 target={"_blank"}
+                onClick={() => {
+                  mixpanel.track(`Clicked slack channel`);
+                }}
               >
                 Join the #erg-rainbow-stack channel
               </EuiButton>
