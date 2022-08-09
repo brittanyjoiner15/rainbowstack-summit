@@ -14,10 +14,12 @@ import {
   EuiPageContent,
   EuiPageContentBody,
   EuiPageHeader,
+  EuiSpacer,
 } from "@elastic/eui";
 import { React, useState } from "react";
 import { rainbowCluster } from "../data/ImageRefs";
 import { addCalButtons } from "./AddCalButtons";
+import BottomBar from "./BottomBar";
 import { sessionOne, sessionTwo } from "./consts";
 import DetailsPanel from "./panels/DetailsPanel";
 import SpeakersPanel from "./panels/SpeakersPanel";
@@ -183,8 +185,9 @@ function MainPage() {
             <EuiPageContentBody>
               {showSelectedContent(selectedTab)}
             </EuiPageContentBody>
+            <EuiSpacer size="l" />
           </EuiPageContent>
-
+          <BottomBar />
           {showLoginModal && promptPassword()}
         </EuiPageBody>
       </EuiFlexGroup>
@@ -194,4 +197,26 @@ function MainPage() {
 
 export default MainPage;
 
-// TODO: Make a footer with
+{
+  /* <EuiPanel>
+<EuiText>
+  <h4> What's the Rainbowstack?</h4>
+</EuiText>
+<EuiSpacer />
+<EuiText>
+  Rainbowstack is Elastic's ERG for LGBTQIA+ members and allies.
+</EuiText>
+<EuiSpacer />
+<EuiText>
+  Not already a part of it? We'd love to have you join!
+</EuiText>
+<EuiSpacer />
+<EuiFlexGroup justifyContent="center">
+  <EuiFlexItem>
+    <EuiButton color="primary" fill>
+      Join us in #erg-rainbow-stack
+    </EuiButton>
+  </EuiFlexItem>
+</EuiFlexGroup>
+</EuiPanel> */
+}
