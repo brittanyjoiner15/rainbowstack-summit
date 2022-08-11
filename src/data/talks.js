@@ -71,14 +71,6 @@ export const talks = [
     speaker: findSpeaker("Brittany Joiner"),
   },
   {
-    sessionDetails: setSessionDetails("1", 2),
-    title: "Making Time for Music Or Something Like That",
-    description:
-      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Self Care",
-    speaker: findSpeaker("Zacqary Xeper"),
-  },
-  {
     sessionDetails: setSessionDetails("1", 6),
     title: "How To Find Peace In The Chaos Of The World",
     description:

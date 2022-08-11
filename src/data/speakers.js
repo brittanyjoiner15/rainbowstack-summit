@@ -59,15 +59,6 @@ export const speakers = [
     pronouns: "she/her",
   },
   {
-    name: "Zacqary Xeper",
-    title: "Senior Software Engineer",
-    team: "Stack - Machine Learning",
-    basedIn: "Louisiana, USA",
-    shortBio: "👋",
-    avatar: "https://ca.slack-edge.com/T0CUZ52US-UK5V92V7F-f6356aca3f9f-512",
-    pronouns: "him/him/they/them",
-  },
-  {
     name: "Alejandro Sánchez",
     title: "Consulting Architect",
     team: "Customer Success Group",
