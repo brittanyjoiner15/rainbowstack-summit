@@ -169,8 +169,8 @@ function MainPage() {
             pageTitle={makeRainbowText()}
             rightSideItems={[
               loginButton(),
-              addCalButtons(sessionOne.dateAndTime, sessionOne.calendarLink),
               addCalButtons(sessionTwo.dateAndTime, sessionTwo.calendarLink),
+              addCalButtons(sessionOne.dateAndTime, sessionOne.calendarLink),
             ]}
             tabs={tabs}
           />
