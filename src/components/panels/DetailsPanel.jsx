@@ -15,24 +15,9 @@ export default class DetailsPanel extends React.Component {
     return (
       <EuiImage
         size="original"
-        alt="Rainbowstack Summit banner"
-        src="https://user-images.githubusercontent.com/16166290/180572784-b68feda6-4179-46b9-bb69-e01ff65f16c8.png"
+        alt="Rainbow Stack Summit banner"
+        src="https://firebasestorage.googleapis.com/v0/b/photo-url-generator-e736c.appspot.com/o/posts%2FUiuFw9e4h0ML4Felqkcp%2Fimage?alt=media&token=0575d483-9b65-4afa-b8cb-d9ac5336499a"
       />
-    );
-  };
-
-  renderDescription = () => {
-    return (
-      <>
-        <EuiPanel>
-          <EuiText>
-            <h3>
-              The first ever event to bring Rainbowstack members together to
-              share ideas, learn from each other, and have fun together!
-            </h3>
-          </EuiText>
-        </EuiPanel>
-      </>
     );
   };
 
@@ -46,7 +31,7 @@ export default class DetailsPanel extends React.Component {
           <EuiEmptyPrompt
             title={
               <span>
-                Bringing Rainbowstack members together to share ideas, learn
+                Bringing Rainbow Stack members together to share ideas, learn
                 from each other, and have fun together!
               </span>
             }

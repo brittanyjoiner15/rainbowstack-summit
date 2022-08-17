@@ -198,27 +198,3 @@ function MainPage() {
 }
 
 export default MainPage;
-
-{
-  /* <EuiPanel>
-<EuiText>
-  <h4> What's the Rainbowstack?</h4>
-</EuiText>
-<EuiSpacer />
-<EuiText>
-  Rainbowstack is Elastic's ERG for LGBTQIA+ members and allies.
-</EuiText>
-<EuiSpacer />
-<EuiText>
-  Not already a part of it? We'd love to have you join!
-</EuiText>
-<EuiSpacer />
-<EuiFlexGroup justifyContent="center">
-  <EuiFlexItem>
-    <EuiButton color="primary" fill>
-      Join us in #erg-rainbow-stack
-    </EuiButton>
-  </EuiFlexItem>
-</EuiFlexGroup>
-</EuiPanel> */
-}

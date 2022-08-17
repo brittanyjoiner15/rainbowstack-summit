@@ -138,7 +138,7 @@ export const talks = [
     sessionDetails: setSessionDetails("1", 1),
     title: "Queer Literature and Book Club Kickoff",
     description:
-      "Take a deep dive into new releases in queer literature and the kick off for the Rainbowstack Book Club!",
+      "Take a deep dive into new releases in queer literature and the kick off for the Rainbow Stack Book Club!",
     genre: "LGBTQIA+",
     speaker: findSpeaker("Cory Fairchild"),
   },

@@ -1,3 +1,3 @@
 # Getting Started with Create React App
 
-Rainbowstack Summit! An event hosted by the Rainbowstack ERG
+Rainbow Stack Summit! An event hosted by the Rainbow Stack ERG

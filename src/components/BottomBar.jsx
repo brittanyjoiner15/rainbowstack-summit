@@ -16,7 +16,7 @@ export default class Bottombar extends React.Component {
           <EuiFlexGroup direction="row" alignItems="center">
             <EuiFlexItem>
               <EuiText>
-                <h4>Hosted by Elastic's Rainbowstack ERG </h4>
+                <h4>Hosted by Elastic's Rainbow Stack ERG </h4>
               </EuiText>
               <EuiText>Group for LGBTQIA+ members and allies</EuiText>
             </EuiFlexItem>
@@ -31,7 +31,7 @@ export default class Bottombar extends React.Component {
                   mixpanel.track(`Clicked google group`);
                 }}
               >
-                Join the rainbowstack@ group
+                Join the rainbow-stack@ group
               </EuiButton>
             </EuiFlexItem>
 
