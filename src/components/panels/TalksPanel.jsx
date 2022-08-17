@@ -24,18 +24,6 @@ export default class TalksPanel extends React.Component {
     };
   }
 
-  // sendToZapier(data) {
-  //   fetch("https://hooks.zapier.com/hooks/catch/667097/bqhe6mm/", {
-  //     method: "POST",
-  //     body: data,
-  //   })
-  //     .then((res) => res.json())
-  //     .then((json) => {
-  //       console.log("sent to zapier");
-  //     })
-  //     .catch((err) => console.log(err));
-  // }
-
   createSortingObject() {
     return {
       sort: {
