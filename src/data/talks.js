@@ -86,11 +86,11 @@ export const talks = [
   },
   {
     sessionDetails: setSessionDetails("1", 3),
-    title: "Making Tech Careers Accessible for Everyone",
+    title: `"If you don't wanna qup": How I Made A New Prince Song from Old Prince Songs`,
     description:
-      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Tech",
-    speaker: [findSpeaker("Brittany Joiner")],
+      "Outlining the steps I took to make a neural network that generates Prince song lyrics.",
+    genre: "Self Care",
+    speaker: [findSpeaker("Courtney Wilburn")],
   },
   {
     sessionDetails: setSessionDetails("1", 4),
@@ -104,20 +104,20 @@ export const talks = [
     ],
   },
   {
-    sessionDetails: setSessionDetails("1", 5),
-    title: `"If you don't wanna qup": How I Made A New Prince Song from Old Prince Songs`,
-    description:
-      "Outlining the steps I took to make a neural network that generates Prince song lyrics.",
-    genre: "Self Care",
-    speaker: [findSpeaker("Courtney Wilburn")],
-  },
-  {
     sessionDetails: setSessionDetails("1", 6),
     title: "Finding Peace When the World's A Mess",
     description:
       "Our world is a bit chaotic these days to say the least. I've found these 6 practices can help you feel like a part of the kind of community we need in the world today. Suddenly you’re not alone against adversity, you’re  part of a very big “us” that’s full of miraculous people.",
     genre: "Self Care",
     speaker: [findSpeaker("Kiley Davidson")],
+  },
+  {
+    sessionDetails: setSessionDetails("1", 7),
+    title: "Making Tech Careers Accessible for Everyone",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "Tech",
+    speaker: [findSpeaker("Brittany Joiner")],
   },
   {
     sessionDetails: setSessionDetails("2", 1),
@@ -155,16 +155,16 @@ export const talks = [
     sessionDetails: setSessionDetails("2", 5),
     title: "How I Helped Myself by Helping Others at codebar.io",
     description:
-      "A few year ago I started volunteering at codebar.io , an organisation where we promote diversity in Tech by offering free coding workshop, and ...",
+      "A few year ago I started volunteering at codebar.io , an organisation where we promote diversity in Tech by offering free coding workshop, and ... 👀",
     genre: "Tech",
     speaker: [findSpeaker("David Ricordel")],
   },
   {
     sessionDetails: setSessionDetails("2", 6),
-    title: "How To Make Music",
+    title: "Making music can make you happier",
     description:
-      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "TBD",
+      "Making music is one of the things that I enjoy the most, it really helps me disconnect, relax and have fun. Anyone can make music with the right tools, let me show you some of the tools I use.",
+    genre: "Self Care",
     speaker: [findSpeaker("Julio Camarero")],
   },
   {
@@ -172,7 +172,7 @@ export const talks = [
     title: "Pilots Follow Checklist",
     description:
       "I’m a pilot and I love flying!  One of the most important things I had to learn is to follow a checklist - even AND SPECIALLY if my engine is on fire.  What does flying, following checklists, and DEI have in common?  I’ll share a few experiences and connections around creating and following checklists.",
-    genre: "TBD",
+    genre: "Tell Me More",
     speaker: [findSpeaker("Javier Detrinidad")],
   },
   {

@@ -79,7 +79,7 @@ export default class TalksPanel extends React.Component {
   renderGenreTags = (tagName) => {
     let color = "";
     switch (tagName) {
-      case "How To":
+      case "Tell Me More":
         return (color = "primary");
       case "Tech":
         return (color = "success");
