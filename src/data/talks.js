@@ -50,6 +50,12 @@ const setSessionDetails = (session, order) => {
           ? "2022-09-08T18:50:00.000Z"
           : "2022-09-13T13:50:00.000Z";
       break;
+    case 7:
+      timestamp =
+        session === "1"
+          ? "2022-09-08T19:00:00.000Z"
+          : "2022-09-13T14:00:00.000Z";
+      break;
     default:
       timestamp = "TBD";
       break;
@@ -162,19 +168,19 @@ export const talks = [
     speaker: [findSpeaker("Julio Camarero")],
   },
   {
+    sessionDetails: setSessionDetails("2", 7),
+    title: "Pilots Follow Checklist",
+    description:
+      "I’m a pilot and I love flying!  One of the most important things I had to learn is to follow a checklist - even AND SPECIALLY if my engine is on fire.  What does flying, following checklists, and DEI have in common?  I’ll share a few experiences and connections around creating and following checklists.",
+    genre: "TBD",
+    speaker: [findSpeaker("Javier Detrinidad")],
+  },
+  {
     sessionDetails: setSessionDetails(),
     title: "Something Really Cool But We Don't Know Yet",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
     genre: "TBD",
     speaker: [findSpeaker("Alejandro Sánchez")],
-  },
-  {
-    sessionDetails: setSessionDetails(),
-    title: "Something Interest I'm Sure You'll Want To Hear",
-    description:
-      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "TBD",
-    speaker: [findSpeaker("Javier Detrinidad")],
   },
 ];

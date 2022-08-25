@@ -132,8 +132,9 @@ export const speakers = [
     title: "Sr Manager, Site Reliability Engineer",
     team: "Platform",
     basedIn: "Pennsylvania, USA",
-    shortBio: ".....",
+    shortBio:
+      "💍of @215kate. Dog mom of @ourdudespencer. Lifelong Prince fan. opinions = mine.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U018Z4EHFPD-78d4363f13ec-512",
-    pronouns: "she/her/hers",
+    pronouns: "she/her",
   },
 ];
