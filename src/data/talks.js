@@ -131,14 +131,6 @@ export const talks = [
   },
   {
     sessionDetails: setSessionDetails("2", 3),
-    title: "How To Make Music",
-    description:
-      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "Self Care",
-    speaker: [findSpeaker("Julio Camarero")],
-  },
-  {
-    sessionDetails: setSessionDetails("2", 4),
     title: "The Power of Reading the Docs",
     description:
       "Sometimes we see people who are experts, or have deep knowledge about something, a programming language, some program, a process, a technique or something else. To reach a similar level seems complicated, hard and we wonder how they achieved it. Most often than not, the secret might be just to read the docs. I'll share some real life examples to show the power of reading the docs and, I hope, they will inspire you.",
@@ -146,7 +138,7 @@ export const talks = [
     speaker: [findSpeaker("Anderson Queiroz")],
   },
   {
-    sessionDetails: setSessionDetails("2", 5),
+    sessionDetails: setSessionDetails("2", 4),
     title: "Best LGBTQIA+ Twitter Accounts",
     description:
       "Need a laugh? Here's the best twitter accounts to follow for some good humor and entertainment.",
@@ -154,12 +146,20 @@ export const talks = [
     speaker: [findSpeaker("Wes Mason")],
   },
   {
-    sessionDetails: setSessionDetails("2", 6),
+    sessionDetails: setSessionDetails("2", 5),
     title: "How I Helped Myself by Helping Others at codebar.io",
     description:
       "A few year ago I started volunteering at codebar.io , an organisation where we promote diversity in Tech by offering free coding workshop, and ...",
     genre: "Tech",
     speaker: [findSpeaker("David Ricordel")],
+  },
+  {
+    sessionDetails: setSessionDetails("2", 6),
+    title: "How To Make Music",
+    description:
+      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
+    genre: "TBD",
+    speaker: [findSpeaker("Julio Camarero")],
   },
   {
     sessionDetails: setSessionDetails(),
