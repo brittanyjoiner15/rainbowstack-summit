@@ -154,6 +154,15 @@ export default class TalksPanel extends React.Component {
             window.open(e.sessionDetails.calendarLink, "_blank");
           },
         },
+        {
+          name: "Send me a slack reminder",
+          description: "Get a reminder on slack about this session.",
+          type: "icon",
+          icon: "bell",
+          onClick: () => {
+            window.open("https://forms.gle/RMjnXyhqWervgand8", "_blank");
+          },
+        },
       ],
       width: "100px",
     },

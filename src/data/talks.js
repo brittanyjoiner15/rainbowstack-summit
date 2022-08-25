@@ -11,65 +11,16 @@ const setSessionDetails = (session, order) => {
     session === "1"
       ? "https://calendar.google.com/event?action=TEMPLATE&tmeid=NG0zaDJ1aG45dXU1bWthYTVwbWtrNHQ4MmogYnJpdHRhbnkuam9pbmVyQGVsYXN0aWMuY28&tmsrc=brittany.joiner%40elastic.co"
       : "https://calendar.google.com/event?action=TEMPLATE&tmeid=NmFsaGNxMnZjOThnMGRoaXByM25kczk0MDUgYnJpdHRhbnkuam9pbmVyQGVsYXN0aWMuY28&tmsrc=brittany.joiner%40elastic.co";
-  let timestamp = "";
 
-  switch (order) {
-    case 1:
-      timestamp =
-        session === "1"
-          ? "2022-09-08T18:00:00.000Z"
-          : "2022-09-13T13:00:00.000Z";
-      break;
-    case 2:
-      timestamp =
-        session === "1"
-          ? "2022-09-08T18:05:00.000Z"
-          : "2022-09-13T13:05:00.000Z";
-      break;
-    case 3:
-      timestamp =
-        session === "1"
-          ? "2022-09-08T18:20:00.000Z"
-          : "2022-09-13T13:20:00.000Z";
-      break;
-    case 4:
-      timestamp =
-        session === "1"
-          ? "2022-09-08T18:35:00.000Z"
-          : "2022-09-13T13:35:00.000Z";
-      break;
-    case 5:
-      timestamp =
-        session === "1"
-          ? "2022-09-08T18:50:00.000Z"
-          : "2022-09-13T13:50:00.000Z";
-      break;
-    case 6:
-      timestamp =
-        session === "1"
-          ? "2022-09-08T19:05:00.000Z"
-          : "2022-09-13T14:05:00.000Z";
-      break;
-    case 7:
-      timestamp =
-        session === "1"
-          ? "2022-09-08T19:20:00.000Z"
-          : "2022-09-13T14:20:00.000Z";
-      break;
-    default:
-      timestamp = "TBD";
-      break;
-  }
   return (sessionDetails = {
     calendarLink,
     date,
-    timestamp,
   });
 };
 
 export const talks = [
   {
-    sessionDetails: setSessionDetails("1", 1),
+    sessionDetails: setSessionDetails("1"),
     sessionTime: "2022-09-08T18:00:00.000Z",
     title: "Session 1 - Welcome and Kickoff",
     description:
@@ -78,7 +29,7 @@ export const talks = [
     speaker: [findSpeaker("Brittany Joiner")],
   },
   {
-    sessionDetails: setSessionDetails("1", 2),
+    sessionDetails: setSessionDetails("1"),
     sessionTime: "2022-09-08T18:05:00.000Z",
     title: "Queer Literature and Book Club Kickoff",
     description:
@@ -87,7 +38,7 @@ export const talks = [
     speaker: [findSpeaker("Cory Fairchild")],
   },
   {
-    sessionDetails: setSessionDetails("1", 3),
+    sessionDetails: setSessionDetails("1"),
     sessionTime: "2022-09-08T18:20:00.000Z",
     title: "Breaking the Cool/Uncool Binary",
     description:
@@ -96,7 +47,7 @@ export const talks = [
     speaker: [findSpeaker("Dany Johnson")],
   },
   {
-    sessionDetails: setSessionDetails("1", 4),
+    sessionDetails: setSessionDetails("1"),
     sessionTime: "2022-09-08T18:35:00.000Z",
     title: `"If you don't wanna qup": How I Made A New Prince Song from Old Prince Songs`,
     description:
@@ -105,7 +56,7 @@ export const talks = [
     speaker: [findSpeaker("Courtney Wilburn")],
   },
   {
-    sessionDetails: setSessionDetails("1", 5),
+    sessionDetails: setSessionDetails("1"),
     sessionTime: "2022-09-08T18:50:00.000Z",
     title: "Diversity in Tech Panel",
     description:
@@ -117,7 +68,7 @@ export const talks = [
     ],
   },
   {
-    sessionDetails: setSessionDetails("1", 6),
+    sessionDetails: setSessionDetails("1"),
     sessionTime: "2022-09-08T19:10:00.000Z",
     title: "Finding Peace When the World's A Mess",
     description:
@@ -126,7 +77,7 @@ export const talks = [
     speaker: [findSpeaker("Kiley Davidson")],
   },
   {
-    sessionDetails: setSessionDetails("1", 7),
+    sessionDetails: setSessionDetails("1"),
     sessionTime: "2022-09-08T19:25:00.000Z",
     title: "Making Tech Careers Accessible for Everyone",
     description:
@@ -135,7 +86,7 @@ export const talks = [
     speaker: [findSpeaker("Brittany Joiner")],
   },
   {
-    sessionDetails: setSessionDetails("2", 1),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T13:00:00.000Z",
     title: "Session 2 - Welcome and Kickoff",
     description:
@@ -144,7 +95,7 @@ export const talks = [
     speaker: [findSpeaker("Anderson Queiroz")],
   },
   {
-    sessionDetails: setSessionDetails("2", 1),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T13:05:00.000Z",
     title: "Desana and How Remote Employees Can Use It",
     description:
@@ -153,7 +104,7 @@ export const talks = [
     speaker: [findSpeaker("Corey Williams")],
   },
   {
-    sessionDetails: setSessionDetails("2", 2),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T13:20:00.000Z",
     title: "How to Find and Support LGBTQIA+ Orgs",
     description:
@@ -162,7 +113,7 @@ export const talks = [
     speaker: [findSpeaker("Kristina Paiz")],
   },
   {
-    sessionDetails: setSessionDetails("2", 3),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T13:35:00.000Z",
     title: "The Power of Reading the Docs",
     description:
@@ -171,7 +122,7 @@ export const talks = [
     speaker: [findSpeaker("Anderson Queiroz")],
   },
   {
-    sessionDetails: setSessionDetails("2", 4),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T13:50:00.000Z",
     title: "Best LGBTQIA+ Twitter Accounts",
     description:
@@ -180,7 +131,7 @@ export const talks = [
     speaker: [findSpeaker("Wes Mason")],
   },
   {
-    sessionDetails: setSessionDetails("2", 5),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T14:05:00.000Z",
     title: "How I Helped Myself by Helping Others at codebar.io",
     description:
@@ -189,7 +140,7 @@ export const talks = [
     speaker: [findSpeaker("David Ricordel")],
   },
   {
-    sessionDetails: setSessionDetails("2", 6),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T14:20:00.000Z",
     title: "Making music can make you happier",
     description:
@@ -198,7 +149,7 @@ export const talks = [
     speaker: [findSpeaker("Julio Camarero")],
   },
   {
-    sessionDetails: setSessionDetails("2", 7),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T14:35:00.000Z",
     title: "Pilots Follow Checklist",
     description:
@@ -207,7 +158,7 @@ export const talks = [
     speaker: [findSpeaker("Javier Detrinidad")],
   },
   {
-    sessionDetails: setSessionDetails(),
+    sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T14:50:00.000Z",
     title: "Something Really Cool But We Don't Know Yet",
     description:
