@@ -1,14 +1,5 @@
 import {
-  EuiButton,
-  EuiFieldText,
   EuiFlexGroup,
-  EuiForm,
-  EuiFormRow,
-  EuiModal,
-  EuiModalBody,
-  EuiModalFooter,
-  EuiModalHeader,
-  EuiModalHeaderTitle,
   EuiPage,
   EuiPageBody,
   EuiPageContent,
@@ -30,9 +21,6 @@ import mixpanel from "mixpanel-browser";
 
 function MainPage() {
   const [selectedTab, setSelectedTab] = useState("event");
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [typedPassword, setTypedPassword] = useState("");
-  const [showLoginModal, setShowLoginModal] = useState(false);
 
   const onSelectedTabChanged = (id) => {
     setSelectedTab(id);
@@ -50,81 +38,6 @@ function MainPage() {
       default:
         return tabs[0].content;
     }
-  };
-
-  const loginButton = () => {
-    return (
-      <>
-        <EuiButton
-          color={"text"}
-          onClick={() => {
-            if (isAdmin) {
-              setIsAdmin(false);
-              setTypedPassword("");
-            }
-            if (!isAdmin) {
-              showLoginModal
-                ? setShowLoginModal(false)
-                : setShowLoginModal(true);
-            }
-          }}
-        >
-          {isAdmin ? "Switch to user" : "I'm an admin"}
-        </EuiButton>
-      </>
-    );
-  };
-
-  const promptPassword = () => {
-    const password = process.env.REACT_APP_PASSWORD;
-
-    const handleSubmit = () => {
-      if (!typedPassword) {
-        return;
-      }
-
-      if (typedPassword === password) {
-        setIsAdmin(true);
-        setShowLoginModal(false);
-      } else {
-        alert("Incorrect password");
-        setTypedPassword("");
-      }
-    };
-
-    return (
-      <>
-        <EuiModal
-          onClose={() => {
-            setShowLoginModal(false);
-          }}
-        >
-          <EuiModalHeader>
-            <EuiModalHeaderTitle>
-              <h1>Login</h1>
-            </EuiModalHeaderTitle>
-          </EuiModalHeader>
-
-          <EuiModalBody>
-            <EuiForm>
-              <EuiFormRow>
-                <EuiFieldText
-                  placeholder="Enter the password"
-                  onBlur={(e) => setTypedPassword(e.target.value)}
-                  aria-label="Use aria labels when no actual label is in use"
-                />
-              </EuiFormRow>
-            </EuiForm>
-          </EuiModalBody>
-
-          <EuiModalFooter>
-            <EuiButton type="submit" onClick={handleSubmit()} fill>
-              Submit
-            </EuiButton>
-          </EuiModalFooter>
-        </EuiModal>
-      </>
-    );
   };
 
   const tabs = [
@@ -155,7 +68,7 @@ function MainPage() {
       isSelected: selectedTab === "talks",
       label: "Talks",
       onClick: () => onSelectedTabChanged("talks"),
-      content: isAdmin ? <TalksPanel /> : <TalksTBDPanel />,
+      content: <TalksPanel />,
     },
   ];
 
@@ -168,7 +81,6 @@ function MainPage() {
             iconType={rainbowCluster}
             pageTitle={makeRainbowText()}
             rightSideItems={[
-              loginButton(),
               addCalButtons(sessionTwo.dateAndTime, sessionTwo.calendarLink),
               addCalButtons(sessionOne.dateAndTime, sessionOne.calendarLink),
             ]}
@@ -190,7 +102,6 @@ function MainPage() {
             <EuiSpacer size="l" />
           </EuiPageContent>
           <BottomBar />
-          {showLoginModal && promptPassword()}
         </EuiPageBody>
       </EuiFlexGroup>
     </EuiPage>

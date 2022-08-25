@@ -44,7 +44,6 @@ export default class DetailsPanel extends React.Component {
             actions={[
               addCalButtons(sessionOne.dateAndTime, sessionOne.calendarLink),
               addCalButtons(sessionTwo.dateAndTime, sessionTwo.calendarLink),
-              // Maybe add a "send me a text to remind me button?"
             ]}
           />
         </EuiFlexGroup>
