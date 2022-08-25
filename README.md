@@ -1,3 +1,5 @@
-# Getting Started with Create React App
+Using Eui and React to create a site for an event!
 
-Rainbow Stack Summit! An event hosted by the Rainbow Stack ERG
+[View the site](https://www.rainbowstacksummit.com/).
+
+Check out [https://github.com/brittanyjoiner15/eui-event](the template repo) if you want to make your own!

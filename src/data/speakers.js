@@ -102,7 +102,8 @@ export const speakers = [
     title: "Consulting Architect",
     team: "Customer Success Group",
     basedIn: "Spain",
-    shortBio: "👋",
+    shortBio:
+      "Elastic Consultant based in Barcelona, diversity in Tech advocate.",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UM85VQQQH-537e4956a5c4-512",
     pronouns: "he/him",
   },

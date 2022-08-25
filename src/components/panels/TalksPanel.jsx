@@ -46,12 +46,42 @@ export default class TalksPanel extends React.Component {
       : localTime.format("h:mm a z");
   };
 
+  renderSpeakers = (speakers) => {
+    if (speakers.length > 1) {
+      return speakers.map((speaker) => (
+        <>
+          <EuiFlexItem>
+            <EuiAvatar
+              imageUrl={speaker.avatar}
+              size="s"
+              name={speaker.name}
+              className="xMargin"
+            />
+            <EuiText>{speaker.name}</EuiText>
+          </EuiFlexItem>
+        </>
+      ));
+    } else {
+      return (
+        <>
+          <EuiAvatar
+            imageUrl={speakers[0].avatar}
+            size="s"
+            name={speakers[0].name}
+            className="xMargin"
+          />
+          <EuiText>{speakers[0].name}</EuiText>
+        </>
+      );
+    }
+  };
+
   renderGenreTags = (tagName) => {
     let color = "";
     switch (tagName) {
       case "How To":
         return (color = "primary");
-      case "Elastic":
+      case "Tech":
         return (color = "success");
       case "Self Care":
         return (color = "accent");
@@ -66,7 +96,6 @@ export default class TalksPanel extends React.Component {
     {
       field: "sessionDetails",
       name: "Session",
-      sortable: true,
       render: (sessionDetails) => (
         <EuiBadge
           color={sessionDetails.date === "Sept 8th" ? "primary" : "success"}
@@ -74,6 +103,7 @@ export default class TalksPanel extends React.Component {
           {sessionDetails.date}
         </EuiBadge>
       ),
+      width: "100px",
     },
     {
       field: "sessionDetails",
@@ -85,6 +115,7 @@ export default class TalksPanel extends React.Component {
           {this.showTime(sessionDetails.timestamp)}
         </>
       ),
+      width: "150px",
     },
     {
       field: "title",
@@ -100,17 +131,7 @@ export default class TalksPanel extends React.Component {
       field: "speaker",
       name: "Speaker",
       sortable: true,
-      render: (speaker) => (
-        <>
-          <EuiAvatar
-            imageUrl={speaker.avatar}
-            size="s"
-            name={speaker.name}
-            className="xMargin"
-          />
-          <EuiText>{speaker.name}</EuiText>
-        </>
-      ),
+      render: (speaker) => this.renderSpeakers(speaker),
     },
     {
       field: "genre",
@@ -119,6 +140,7 @@ export default class TalksPanel extends React.Component {
       render: (genre) => (
         <EuiBadge color={this.renderGenreTags(genre)}>{genre}</EuiBadge>
       ),
+      width: "100px",
     },
     {
       name: "Actions",
@@ -133,6 +155,7 @@ export default class TalksPanel extends React.Component {
           },
         },
       ],
+      width: "100px",
     },
   ];
 
