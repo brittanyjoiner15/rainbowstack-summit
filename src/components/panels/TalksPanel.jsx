@@ -79,7 +79,7 @@ export default class TalksPanel extends React.Component {
   renderGenreTags = (tagName) => {
     let color = "";
     switch (tagName) {
-      case "Tell Me More":
+      case "Show Me":
         return (color = "primary");
       case "Tech":
         return (color = "success");
@@ -106,13 +106,13 @@ export default class TalksPanel extends React.Component {
       width: "100px",
     },
     {
-      field: "sessionDetails",
+      field: "sessionTime",
       name: "Time",
       sortable: true,
-      render: (sessionDetails) => (
+      render: (sessionTime) => (
         <>
           <EuiIcon type="clock" />
-          {this.showTime(sessionDetails.timestamp)}
+          {this.showTime(sessionTime)}
         </>
       ),
       width: "150px",
