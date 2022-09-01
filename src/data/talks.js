@@ -109,9 +109,9 @@ export const talks = [
     sessionTime: "2022-09-13T13:20:00.000Z",
     title: "How to Find and Support LGBTQIA+ Orgs",
     description:
-      "Want to support more causes, but don't know where to start? Learn how to get involved more with causes and organizations.",
+      "Want to support more causes, but don't know where to start? Learn how to get involved with organizations and causes you're passionate about.",
     genre: "LGBTQIA+",
-    speaker: [findSpeaker("Kristina Paiz")],
+    speaker: [findSpeaker("Azka Sohail"), findSpeaker("Kelsey Fromal")],
   },
   {
     sessionDetails: setSessionDetails("2"),
@@ -125,7 +125,7 @@ export const talks = [
   {
     sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T13:50:00.000Z",
-    title: "Best LGBTQIA+ Twitter Accounts",
+    title: "Who to follow, who to unfollow and why that meme got you muted",
     description:
       "Need a laugh? Here's the best twitter accounts to follow for some good humor and entertainment.",
     genre: "LGBTQIA+",

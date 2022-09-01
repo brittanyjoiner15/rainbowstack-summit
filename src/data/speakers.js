@@ -49,13 +49,21 @@ export const speakers = [
     pronouns: "they/he",
   },
   {
-    name: "Kristina Paiz",
-    title: "Senior Manager, HR Programs",
+    name: "Azka Sohail",
+    title: "Sr. Elastic Cares Associate",
     team: "DEI/Elastic Cares",
-    basedIn: "Italy",
-    shortBio:
-      "Kristina here - from the SF Bay Area now a nomad of sorts in the Rome area. I manage all things goodness and philanthropy at Elastic.",
-    avatar: "https://ca.slack-edge.com/T0CUZ52US-U66QCD6MN-dee85887a2e7-512",
+    basedIn: "London, UK",
+    shortBio: "",
+    avatar: "https://ca.slack-edge.com/T0CUZ52US-UR1QB03HQ-8103e1783638-512",
+    pronouns: "she/her",
+  },
+  {
+    name: "Kelsey Fromal",
+    title: "Sr. Elastic Cares Associate",
+    team: "DEI/Elastic Cares",
+    basedIn: "Colorado, USA",
+    shortBio: "",
+    avatar: "https://ca.slack-edge.com/T0CUZ52US-U0377DXG1D0-6d561697941e-512",
     pronouns: "she/her",
   },
   {
