@@ -97,9 +97,10 @@ export const talks = [
   {
     sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T13:05:00.000Z",
-    title: "Desana and How Remote Employees Can Use It",
+    title:
+      "There is Life Outside Your Apartment: How to make flexible working work for you!",
     description:
-      "Do you sometimes need a break from your barky co-worker? Learn about the tools Elastic offers for remote employees to get a nice change of scenery.",
+      "It's completely possible that you may never set foot in an Elastic office; however, that does not mean that you are relegated to your kitchen table at home. Elastic Workplace Guru, Corey, will walk you through all of the ways to make the most out of your distributed experience. From tricking out your home office to exploring coworking sites in your neighborhood through Desana, there are options available to make sure you can get all your best work done, no matter where you choose to work from!",
     genre: "Tech",
     speaker: [findSpeaker("Corey Williams")],
   },
@@ -156,14 +157,5 @@ export const talks = [
       "I’m a pilot and I love flying!  One of the most important things I had to learn is to follow a checklist - even AND SPECIALLY if my engine is on fire.  What does flying, following checklists, and DEI have in common?  I’ll share a few experiences and connections around creating and following checklists.",
     genre: "Show Me",
     speaker: [findSpeaker("Javier Detrinidad")],
-  },
-  {
-    sessionDetails: setSessionDetails("2"),
-    sessionTime: "2022-09-13T14:50:00.000Z",
-    title: "Something Really Cool But We Don't Know Yet",
-    description:
-      "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
-    genre: "TBD",
-    speaker: [findSpeaker("Alejandro Sánchez")],
   },
 ];

@@ -59,15 +59,6 @@ export const speakers = [
     pronouns: "she/her",
   },
   {
-    name: "Alejandro Sánchez",
-    title: "Consulting Architect",
-    team: "Customer Success Group",
-    basedIn: "Spain",
-    shortBio: "👋",
-    avatar: "https://ca.slack-edge.com/T0CUZ52US-U02RM2V2KL7-8a493a5856f3-512",
-    pronouns: "him/him",
-  },
-  {
     name: "Javier Detrinidad",
     title: "Program Manager",
     team: "DEI",
