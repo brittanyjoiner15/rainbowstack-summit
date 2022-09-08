@@ -78,7 +78,7 @@ export const talks = [
   },
   {
     sessionDetails: setSessionDetails("1"),
-    sessionTime: "2022-09-13T14:05:00.000Z",
+    sessionTime: "2022-09-08T19:25:00.000Z",
     title: "How I Helped Myself by Helping Others at codebar.io",
     description:
       "A few year ago I started volunteering at codebar.io , an organisation where we promote diversity in Tech by offering free coding workshop, and ... 👀",
@@ -133,7 +133,7 @@ export const talks = [
   },
   {
     sessionDetails: setSessionDetails("2"),
-    sessionTime: "2022-09-08T19:25:00.000Z",
+    sessionTime: "2022-09-13T14:05:00.000Z",
     title: "Making Tech Careers Accessible for Everyone",
     description:
       "This is gonna be a great talk description. It will be a good one i'm sure, but it's not ready yet. So guess you'll need to come back!",
