@@ -53,7 +53,8 @@ export const speakers = [
     title: "Sr. Elastic Cares Associate",
     team: "DEI/Elastic Cares",
     basedIn: "London, UK",
-    shortBio: "",
+    shortBio:
+      "Azka is part of the Elastic Cares Team based in London UK and works on all things Elastic Cares Benefits related (Donation Matching, Volunteer Time Off, and the NPO Grant). Most often found: falling asleep while trying to read!",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-UR1QB03HQ-8103e1783638-512",
     pronouns: "she/her",
   },
@@ -62,7 +63,8 @@ export const speakers = [
     title: "Sr. Elastic Cares Associate",
     team: "DEI/Elastic Cares",
     basedIn: "Colorado, USA",
-    shortBio: "",
+    shortBio:
+      "Kelsey sits on the Elastic Cares team, where she manages VTO and Donation Matching for the AMER and APJ regions. She lives in Boulder, CO with her spouse, their two dogs, and a little one on the way!",
     avatar: "https://ca.slack-edge.com/T0CUZ52US-U0377DXG1D0-6d561697941e-512",
     pronouns: "she/her",
   },
