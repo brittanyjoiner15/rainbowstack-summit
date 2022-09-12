@@ -18,6 +18,7 @@ import TalksPanel from "./panels/TalksPanel";
 import TalksTBDPanel from "./panels/TalksTBDPanel";
 import { makeRainbowText } from "./RainbowLetters";
 import mixpanel from "mixpanel-browser";
+import Recordings from "./Login";
 
 function MainPage() {
   const [selectedTab, setSelectedTab] = useState("event");
@@ -35,6 +36,8 @@ function MainPage() {
         return tabs[1].content;
       case "talks":
         return tabs[2].content;
+      // case "recordings":
+      //   return tabs[3].content;
       default:
         return tabs[0].content;
     }
@@ -70,6 +73,13 @@ function MainPage() {
       onClick: () => onSelectedTabChanged("talks"),
       content: <TalksPanel />,
     },
+    // {
+    //   id: "recordings",
+    //   isSelected: selectedTab === "recordings",
+    //   label: "Recordings",
+    //   onClick: () => onSelectedTabChanged("recordings"),
+    //   content: <Recordings />,
+    // },
   ];
 
   return (

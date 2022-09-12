@@ -143,19 +143,19 @@ export const talks = [
   {
     sessionDetails: setSessionDetails("2"),
     sessionTime: "2022-09-13T14:20:00.000Z",
-    title: "Making music can make you happier",
-    description:
-      "Making music is one of the things that I enjoy the most, it really helps me disconnect, relax and have fun. Anyone can make music with the right tools, let me show you some of the tools I use.",
-    genre: "Self Care",
-    speaker: [findSpeaker("Julio Camarero")],
-  },
-  {
-    sessionDetails: setSessionDetails("2"),
-    sessionTime: "2022-09-13T14:35:00.000Z",
     title: "Pilots Follow Checklist",
     description:
       "I’m a pilot and I love flying!  One of the most important things I had to learn is to follow a checklist - even AND SPECIALLY if my engine is on fire.  What does flying, following checklists, and DEI have in common?  I’ll share a few experiences and connections around creating and following checklists.",
     genre: "Show Me",
     speaker: [findSpeaker("Javier Detrinidad")],
+  },
+  {
+    sessionDetails: setSessionDetails("2"),
+    sessionTime: "2022-09-13T14:35:00.000Z",
+    title: "Making music can make you happier",
+    description:
+      "Making music is one of the things that I enjoy the most, it really helps me disconnect, relax and have fun. Anyone can make music with the right tools, let me show you some of the tools I use.",
+    genre: "Self Care",
+    speaker: [findSpeaker("Julio Camarero")],
   },
 ];
